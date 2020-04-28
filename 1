@@ -1,0 +1,15 @@
+GOL  gol;
+
+int myColorBackground = color(0,0,0);
+int knobValue = 100;
+
+void setup(){
+  size(800,800);
+  gol = new GOL();
+}
+
+void draw(){
+  background(255);
+  gol.generate();
+  gol.display();
+} 
